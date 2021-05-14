@@ -1,0 +1,232 @@
+*{
+    margin: 0px; padding: 0px;
+    font-family: 'Montserrat', sans-serif;  
+    max-width: 100%; 
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%; max-height: 100%;
+}
+
+/*-- navigation bar --*/
+.navbar{
+    background-color: #0a0910;
+    height: 76px;
+    padding: 0;
+    margin: 0;
+}
+
+.credit{
+    float: left;
+    margin: 29px 0 0 35px;
+}
+.navitem{
+    padding-right: 20px;
+}
+
+.navitem li{
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 15px;
+}
+
+.navitem a{
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.navitem a:hover{
+    background-color: white;
+    display: block;
+    color: #0a0910;
+}
+
+.navbar ul{
+    text-align: right ;
+}
+
+/*-- main landing page --*/
+.landing{
+    background: url('images/neon.gif') no-repeat;
+    background-position: 0 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+
+    width: 100%;
+    height: 600px;
+}
+
+.stationimage{
+    text-align: center;
+}
+
+.stationimage img{
+    width: 350px; height: 350px;
+    margin-top: 55px;
+}
+
+#stationh3 {
+    text-align: center ;
+    margin-top: 30px;
+    color: white;
+    font-size: 24px;
+}
+
+#stationh1 {
+    text-align: center ;
+    margin-top: 5px;
+    color: white;
+    font-size: 48px;
+}
+
+
+.border {
+    background-color:#191020 ;
+    width: 100%; height: 94px;
+}
+
+/*-- haru Uwu --*/
+.haru{
+    height: 858px;
+    max-height: 858px;
+    width: 100%;
+    background-color: #191020;
+}
+
+.haruimg{
+    width: 41.8%;   height: 418px;
+    position: relative;
+    float: left;
+}
+
+.haruimg img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 393px; height: 418px;
+}
+
+.haruintro p{
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 98px;
+    padding-right: 8%;
+}
+
+.clear{
+    clear: both;
+}
+.haruchat{
+    width: 86.43%; height: 30%;
+    background-color: white;
+    margin: auto;
+    border: 1px solid black;
+    max-height: 30%;
+    overflow-y: auto;
+}
+
+.haruchat p{
+    margin: 45px;
+    font-size: 24px;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    height: 36px;
+    width: 100%;
+    background-color: #0a0910;
+}
+
+.foot{
+    position: relative;
+}
+.end p{
+    color: white;   
+    font-size: 10px;
+    float: right;
+    margin: 6px 6px 0 0;
+}
+
+/* responsive tablet*/
+@media only screen and (max-width:1054px) {
+    #stationh1{
+        font-size: 40px;
+    }
+    .navitem a{
+        font-size: 16px;
+    }
+    .navbar{
+        height: 64px;
+    }
+
+    .navitem li{
+        margin-right: 5px;
+    }
+
+    .haruimg img{
+        width: 300px; height: 319px;
+    }
+    
+    .haruintro p{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:760px) {
+    .haru{
+        height: 650px;
+    }
+    .haruimg{
+        display: block;
+        position: relative;
+        width: 100%;
+        right: auto;
+        height: 370px;
+        text-align: center;
+    
+    }
+    .haruimg img{
+        width: 300px; height: 319px;
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .haruintro{
+        position: relative;
+        display: none;
+        flex: none;
+        padding-top: 375px;
+    }
+
+    .haruintro p{
+        padding: 30px 30px 0 30px ;
+        font-size: 22px;
+    }
+    .haruchat{
+        height: 24%;
+        position: relative;
+    }
+    .haruchat p{
+        font-size: 20px;
+        margin: 20px;
+    }
+    .stationimage img{
+        height: 275px; width: 275px;
+    }
+}
