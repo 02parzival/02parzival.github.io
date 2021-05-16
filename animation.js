@@ -1,6 +1,6 @@
 const stationimage = document.querySelector(".stationimage");
 
-var tl = gsap.timeline( {repeat:-1, delay: 0.8});
+var tl = gsap.timeline( {repeat:-1, delay: 1});
 var once = gsap.timeline();
 
 tl.to(stationimage, {y: -20, duration: 1.3, ease: Power1.easeInOut})
