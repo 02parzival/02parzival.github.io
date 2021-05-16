@@ -69,7 +69,9 @@ img{
     -ms-background-size: cover;
 
     width: 100%;
-    height: 600px;
+    height: 100vh;
+
+    overflow-y: auto;
 }
 
 .stationimage{
@@ -143,8 +145,13 @@ img{
 }
 
 .haruchat p{
-    margin: 45px;
+    margin: 3.85% 0 0 3.85%;
     font-size: 24px;
+    float: left;
+}
+
+#chattext{
+    margin-left: 1.71%;
 }
 
 .copyright{
@@ -189,7 +196,7 @@ img{
         font-size: 28px;
     }
 }
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:860px) {
     .haru{
         height: 650px;
     }
@@ -197,7 +204,6 @@ img{
         display: block;
         position: relative;
         width: 100%;
-        right: auto;
         height: 370px;
         text-align: center;
     
@@ -205,7 +211,7 @@ img{
     .haruimg img{
         width: 300px; height: 319px;
         position: relative;
-        padding-top: 60px;
+        padding-top: 52px;
     }
 
     .haruintro{
@@ -224,9 +230,10 @@ img{
         position: relative;
     }
     .haruchat p{
-        font-size: 20px;
-        margin: 20px;
+        font-size: 18px;
+        margin: 20px 0 0 20px;
     }
+
     .stationimage img{
         height: 275px; width: 275px;
     }
