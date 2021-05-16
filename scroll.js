@@ -24,10 +24,14 @@ function smoothScroll(target,duration){
 }
 
 var harunav = document.querySelector('.harunav');
+var homenav = document.querySelector('.homenav');
 
 harunav.addEventListener('click', function(){
     smoothScroll('.haruimg',1800);
 });
+homenav.addEventListener('click', function(){
+    smoothScroll('.navbar',1800);
+})
 
 
 
