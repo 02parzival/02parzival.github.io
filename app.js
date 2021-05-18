@@ -1,3 +1,49 @@
+const optionItem = document.querySelector('.optionitem');
+const optionImages = document.querySelectorAll('.optionitem img');
+const optionContainer = document.querySelector('.optionitem-container');
+
+
+//Button
+const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector('#prevBtn');
+
+//Counter
+
+const size = optionContainer.clientWidth;
+let counter = 1;
+
+
+optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+
+nextBtn.addEventListener('click',function(){
+    if (counter >= optionImages.length -1) return;
+    optionItem.style.transition= 'transform 0.4s ease-in-out';
+    counter ++;
+    optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click',function(){
+    if (counter <= 0) return;
+    optionItem.style.transition= 'transform 0.4s ease-in-out';
+    counter --;
+    optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+optionItem.addEventListener('transitionend', function(){
+    if (optionImages[counter].id === 'lastClone'){
+        optionItem.style.transition = 'none';
+        counter = optionImages.length -2;
+        optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+    if (optionImages[counter].id === 'firstClone'){
+        optionItem.style.transition = 'none';
+        counter = optionImages.length -counter;
+        optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+});
+
 const text = "Where do you want to go?";
 let index = 0;
 let chat = "";
@@ -23,6 +69,7 @@ const options = {
 let observer = new IntersectionObserver(navCheck, options);
 let functionOne = 0; /*limit function to only run once*/
 
+
 function navCheck(entries){
     entries.forEach(entry =>{
         setTimeout(function(){
@@ -38,7 +85,6 @@ function navCheck(entries){
     });
 }
 
-console.log(functionOne);
 
 haruchat.forEach(chat => {
     observer.observe(chat);
