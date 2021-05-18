@@ -159,7 +159,7 @@ img{
 }
 
 .optionitem-container{
-    width: 231px;
+    width: 231px; height: 28px;
     overflow: hidden;
 }
 
@@ -247,7 +247,7 @@ img{
     }   
 
     .optionitem-container{
-        width: 205.3px;
+        width: 205.3px; height: 24.88px;
     }
 
 }
@@ -303,7 +303,7 @@ img{
     }   
 
     .optionitem-container{
-        width: 179.6px;
+        width: 179.6px; height: 21.769px;
     }
 
 }
