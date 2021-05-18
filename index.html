@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./astronaut.ico" type="image/x-icon"> 
 </head>
 <body>
     <div class="navbar">  
@@ -51,12 +52,30 @@
 
         </div>
         <section class="haruchat">
-            <p>
-               <i>  Haru :  </i>
-            </p>
-            <p id="chattext">
-                
-            </p>
+            <div>
+                <p>
+                    <i>  Haru :  </i>
+                 </p>
+                 <p id="chattext">
+                     
+                 </p>
+                 <div class="clear">
+
+                 </div>
+            </div>
+            <div class="option-container">
+                <div id="prevBtn" class="button"><img src="/images/leftarrow.png" alt=""></div>
+                <div class="optionitem-container">
+                    <div class="optionitem">
+                        <img src="/images/school.png" id="lastClone" alt="">
+                        <img src="/images/headquarter.png" alt="">
+                        <img src="/images/library.png" alt="">
+                        <img src="/images/school.png" alt="">
+                        <img src="/images/headquarter.png" id="firstClone" alt="">
+                    </div>
+                </div>
+                <div id="nextBtn" class="button"><img src="/images/rightarrow.png" alt=""></div>
+            </div>
         </section>
     </div>
     <div class="clear">
@@ -76,6 +95,7 @@
     <script src="./animation.js"></script>
     <script src="./scroll.js"></script>
     <script src="./app.js"></script>
+    <script src="/option.js"></script>
 
 </footer>
 </html>

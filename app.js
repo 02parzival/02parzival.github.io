@@ -21,15 +21,20 @@ const options = {
 };
 
 let observer = new IntersectionObserver(navCheck, options);
+let functionOne = 0; /*limit function to only run once*/
 
 function navCheck(entries){
     entries.forEach(entry =>{
-        setTimeout(function(){
-            if(entry.isIntersecting){
-                type();
-            }
-        }, 1200)
-  
+        if (functionOne === 0){
+            setTimeout(function(){
+                if(entry.isIntersecting){
+                    type();
+                    optionShow();
+                }
+            }, 1200);
+            functionOne++;
+        }
+
     });
 }
 

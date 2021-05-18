@@ -146,13 +146,51 @@ img{
 
 .haruchat p{
     margin: 3.85% 0 0 3.85%;
-    font-size: 24px;
+    font-size: 25px;
     float: left;
+}
+
+.option-container{
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+
+}
+
+.optionitem-container{
+    width: 231px;
+    overflow: hidden;
+
+}
+
+.optionitem{
+    display: flex;
+    width: 100%;
+}
+
+.option{
+    font-size: 20px;
+    margin: 0 20%;
+    width: 180px; height: 40px;
+    background-color: cyan;
+    text-align: center;
+}
+
+.option a{
+    color: black;
+}
+
+.button{
+    width: 18px; height: 28px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 #chattext{
     margin-left: 1.71%;
 }
+
 
 .copyright{
     position: absolute;
@@ -185,7 +223,11 @@ img{
     }
 
     .navitem li{
-        margin-right: 5px;
+        margin-right: 5px;  
+    }
+
+    .haruchat{
+       height: 24%;
     }
 
     .haruimg img{
@@ -195,8 +237,21 @@ img{
     .haruintro p{
         font-size: 28px;
     }
+
+    .haruchat p{
+        font-size: 23px;
+    }
+
+    .button{
+        width: 16px; height: 24.8px;
+    }   
+
+    .optionitem-container{
+        width: 205.3px;
+    }
+
 }
-@media only screen and (max-width:860px) {
+@media only screen and (max-width:880px) {
     .haru{
         height: 650px;
     }
@@ -234,7 +289,21 @@ img{
         margin: 20px 0 0 20px;
     }
 
+
     .stationimage img{
         height: 275px; width: 275px;
     }
+
+    .option-container{
+        margin: 7% auto;
+    }
+
+    .button{
+        width: 14px; height: 21.7px;
+    }   
+
+    .optionitem-container{
+        width: 179.6px;
+    }
+
 }
