@@ -25,18 +25,20 @@ let functionOne = 0; /*limit function to only run once*/
 
 function navCheck(entries){
     entries.forEach(entry =>{
-        if (functionOne === 0){
-            setTimeout(function(){
-                if(entry.isIntersecting){
+        setTimeout(function(){
+            if(entry.isIntersecting){
+                if(functionOne===0){
                     type();
                     optionShow();
+                    functionOne++;
                 }
-            }, 1200);
-            functionOne++;
-        }
 
+            }
+        }, 1200);
     });
 }
+
+console.log(functionOne);
 
 haruchat.forEach(chat => {
     observer.observe(chat);
