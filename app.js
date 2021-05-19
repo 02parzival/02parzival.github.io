@@ -1,6 +1,10 @@
 const optionItem = document.querySelector('.optionitem');
 const optionImages = document.querySelectorAll('.optionitem img');
 const optionContainer = document.querySelector('.optionitem-container');
+const hqNav = document.querySelector('.hqNav');
+const schNav = document.querySelector('#schNav');
+const libNav = document.querySelector('.libNav');
+
 
 
 //Button
@@ -42,6 +46,18 @@ optionItem.addEventListener('transitionend', function(){
         optionItem.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 
+});
+
+hqNav.addEventListener('click', function(){
+    window.location.href = "./pages/headquarter/headquarter.html";
+});
+
+schNav.addEventListener('click', function(){
+    window.location.href = "./pages/school/school.html";
+});
+
+libNav.addEventListener('click', function(){
+    window.location.href = "./pages/library/library.html";
 });
 
 const text = "Where do you want to go?";
