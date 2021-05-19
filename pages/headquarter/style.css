@@ -100,3 +100,20 @@ img{
     font-size: 48px;
 }
 
+@media only screen and (max-width:1054px) {
+    #stationh1{
+        font-size: 40px;
+    }
+    .navitem a{
+        font-size: 16px;
+    }
+    .navbar{
+        height: 64px;
+    }
+
+    .navitem li{
+        margin-right: 0 !important;  
+    }
+
+    
+}
