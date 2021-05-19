@@ -102,8 +102,13 @@ img{
 
 @media only screen and (max-width:1054px) {
     #stationh1{
-        font-size: 40px;
+        font-size: 35px;
     }
+
+    #stationh3{
+        font-size: 16px;
+    }
+    
     .navitem a{
         font-size: 16px;
     }
